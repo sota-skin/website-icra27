@@ -27,3 +27,9 @@ Preserve the designated anonymous Git author, committer, and pushing account for
 ## Editorial revision
 
 The user requires a paper website, with factual headings and no promotional slogans. The paper teaser is directly beneath the title; the opening video and tagline are removed. The abstract is verbatim from the source manuscript, with only TeX markup converted. The layer-stack image is regenerated from its vector PDF to preserve transparency and complete labels. Use “Sensor Construction” and “Real Robot Results” as specified.
+
+## Single vector architecture
+
+Per user request, the training section now shows only the architecture produced by the manuscript figure renderer, exported as sanitized SVG. Removed the separate interactive flow diagram and the demonstration-count callout. Training stages and data counts are plain main text. The SVG retains native vector lines, labels, and blocks; the original photographic input and source icons remain embedded image elements. Metadata is stripped from both the SVG and its embedded images.
+
+Quantitative section is titled “Quantitative Results”; “Effect of tactile feedback” is the first tab and default chart view.

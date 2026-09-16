@@ -1,0 +1,9 @@
+task,condition,difference,vision_only,robot_touch,full_cotraining,robot_auxiliary,vision_only_auxiliary,trials
+Box reorientation,ID,Training object,20,27,39,40,4,40
+Box reorientation,OOD-1,2.8x heavier,0,13,28,21,0,40
+Cup picking,ID,Training object,13,18,19,9,5,40
+Cup picking,OOD-1,Square base,11,7,12,6,4,40
+Cup picking,OOD-2,Stack 21 mm higher,4,1,8,3,0,40
+Plug insertion,ID,Training object,0,7,22,13,6,40
+Plug insertion,OOD-1,32 g heavier,1,0,13,1,6,40
+Plug insertion,OOD-2,109 g heavier,0,0,6,0,1,40

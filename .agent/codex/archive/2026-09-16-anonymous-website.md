@@ -53,3 +53,7 @@ Added labeled box and plug robot-only failures and corresponding co-training suc
 ## Sensor explanation and task scope
 
 `index.html` now explains the thin, soft skin, shared human/robot sensing layout, and in-house material cost. Sensor Construction describes heat pressing, UV laser patterning, the molded SEBS sandwich, edge sealing, and cable routing, verified against the manuscript method. SoTa in Action introduces the range of contact-rich tasks. Durability statistics remain in Sensor Characterization.
+
+## Responsive training layout and results readability
+
+`index.html` groups the architecture and explanation in `training-layout`. `styles.css` places the figure left and text right above 1000px, stacking them below that width. Results caveat text is 18px on desktop and 17px on mobile, with a larger label. Verified column positions, stacking, and absence of horizontal overflow at 390, 768, and 1440px.

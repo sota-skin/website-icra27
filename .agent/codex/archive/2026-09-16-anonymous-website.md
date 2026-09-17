@@ -49,3 +49,7 @@ Added labeled box and plug robot-only failures and corresponding co-training suc
 ## Discussion headings
 
 `index.html:876` uses descriptive headings for human training-data diversity, tactile feedback and generalization, evaluation limitations, and the scope of the ablation study. Paragraphs are unchanged.
+
+## Sensor explanation and task scope
+
+`index.html` now explains the thin, soft skin, shared human/robot sensing layout, and in-house material cost. Sensor Construction describes heat pressing, UV laser patterning, the molded SEBS sandwich, edge sealing, and cable routing, verified against the manuscript method. SoTa in Action introduces the range of contact-rich tasks. Durability statistics remain in Sensor Characterization.

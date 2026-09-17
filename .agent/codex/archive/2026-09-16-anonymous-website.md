@@ -41,3 +41,7 @@ The single source-rendered architecture now has a transparent background and sem
 Tactile visualization now reproduces the paper renderer’s fixed 0–0.20 scale, 256-entry gray/pink/yellow colormap, nearest-neighbor activation-dependent diameter formula with the requested 2x display factor, and dark hand on white. Saved processed tactile channels remain unchanged; evaluation raw-delta channels are not used as normalized activation.
 
 Added labeled box and plug robot-only failures and corresponding co-training successes. The three-task comparison is after quantitative results. The main video heading is “SoTa in Action”; task-title arrows and the large mean-success callout are removed. Sensor figure headings state the measured property rather than the test conditions. Board dimensions are replaced by the tested load range.
+
+## Custom video controls
+
+`player.js:1` adds play/pause, seeking, fullscreen, and a persistent literal “2x” speed label to every video. Playback and default playback rates are locked to 2 across source changes. The separate gapless note explains consecutive recorded observations and omitted timing gaps. Original media and observation-index tactile alignment are retained. Browser checks cover every clip, seeking, paired playback, speed enforcement, and mobile layouts.

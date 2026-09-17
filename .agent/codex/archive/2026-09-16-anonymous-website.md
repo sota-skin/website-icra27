@@ -63,3 +63,7 @@ The first Discussion heading now states its conclusion directly: “Human demons
 ## Discussion take-home messages
 
 `index.html:876` now states that human demonstrations improve generalization to unseen objects and that touch improves trained-task performance without ensuring generalization. The limitations heading is simply “Limitations,” as requested.
+
+## Manuscript v6
+
+Replaced `assets/paper.pdf` with the supplied anonymous v6 manuscript, clearing document metadata, embedded-image metadata, document identifiers, and external link actions. Verified eight pages, anonymous author line, and no attachments. Removed the architecture figure download link from `index.html` as requested.

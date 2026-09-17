@@ -33,3 +33,5 @@ The user requires a paper website, with factual headings and no promotional slog
 Per user request, the training section now shows only the architecture produced by the manuscript figure renderer, exported as sanitized SVG. Removed the separate interactive flow diagram and the demonstration-count callout. Training stages and data counts are plain main text. The SVG retains native vector lines, labels, and blocks; the original photographic input and source icons remain embedded image elements. Metadata is stripped from both the SVG and its embedded images.
 
 Quantitative section is titled “Quantitative Results”; “Effect of tactile feedback” is the first tab and default chart view.
+
+Header label changed to “ANONYMOUS AUTHORS” at user request. Navigation uses “Experiments” for the videos to distinguish it from “Results” for the plots. No identities were added.

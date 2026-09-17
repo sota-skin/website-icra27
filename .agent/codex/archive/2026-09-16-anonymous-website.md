@@ -45,3 +45,7 @@ Added labeled box and plug robot-only failures and corresponding co-training suc
 ## Custom video controls
 
 `player.js:1` adds play/pause, seeking, fullscreen, and a persistent literal “2x” speed label to every video. Playback and default playback rates are locked to 2 across source changes. The separate gapless note explains consecutive recorded observations and omitted timing gaps. Original media and observation-index tactile alignment are retained. Browser checks cover every clip, seeking, paired playback, speed enforcement, and mobile layouts.
+
+## Discussion headings
+
+`index.html:876` uses descriptive headings for human training-data diversity, tactile feedback and generalization, evaluation limitations, and the scope of the ablation study. Paragraphs are unchanged.

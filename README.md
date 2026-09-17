@@ -12,9 +12,9 @@ Open `http://localhost:8000`. For GitHub Pages, publish the `main` branch from `
 
 ## Content
 
-- Abstract, paper teaser, sensor design, training description, discussion, and limitations.
-- Nine selected real evaluation clips across the eight paper conditions and one robot-only failure comparison.
-- Recorded 202-taxel activation synchronized with each saved video observation at 30 fps. The displayed signals are processed activation, not calibrated force. A common 0–0.25 color scale is used; higher values saturate. No per-episode rescaling is applied.
+- Abstract, paper teaser, sensor design, interactive vector architecture, discussion, and limitations.
+- Eleven selected real evaluation clips across the eight paper conditions and robot-only failure comparisons for all three tasks.
+- Recorded 202-taxel activation synchronized with each saved video observation at 30 fps. The displayed signals are processed activation, not calibrated force. A common 0–0.20 color scale is used; higher values saturate. No per-episode rescaling is applied.
 - Interactive SVG plots, downloadable standalone SVG figures, and a CSV transcribed from paper Figures 6–7. All counts are full successes out of 40; partial outcomes count as failures.
 
 The source videos are constant-frame-rate recordings. Tactile alignment follows frame index, not wall-clock timestamps; independent hardware-level sensor timing is not available in these trajectory files. The two comparison clips are separate selected rollouts, not paired statistical trials.

@@ -34,4 +34,10 @@ Per user request, the training section now shows only the architecture produced 
 
 Quantitative section is titled “Quantitative Results”; “Effect of tactile feedback” is the first tab and default chart view.
 
-Header label changed to “ANONYMOUS AUTHORS” at user request. Navigation uses “Experiments” for the videos to distinguish it from “Results” for the plots. No identities were added.
+## Interactive paper figures and revised presentation
+
+The single source-rendered architecture now has a transparent background and semantic SVG groups for pre-training, fine-tuning, and inference path emphasis. Training descriptions remain in main text. User-requested custom dropdowns replace native controls while preserving keyboard selection, Escape, outside-click dismissal, and the original change events.
+
+Tactile visualization now reproduces the paper renderer’s fixed 0–0.20 scale, 256-entry gray/pink/yellow colormap, nearest-neighbor activation-dependent diameter formula with the requested 2x display factor, and dark hand on white. Saved processed tactile channels remain unchanged; evaluation raw-delta channels are not used as normalized activation.
+
+Added labeled box and plug robot-only failures and corresponding co-training successes. The three-task comparison is after quantitative results. The main video heading is “SoTa in Action”; task-title arrows and the large mean-success callout are removed. Sensor figure headings state the measured property rather than the test conditions. Board dimensions are replaced by the tested load range.

@@ -59,3 +59,7 @@ Added labeled box and plug robot-only failures and corresponding co-training suc
 `index.html` groups the architecture and explanation in `training-layout`. `styles.css` places the figure left and text right above 1000px, stacking them below that width. Results caveat text is 18px on desktop and 17px on mobile, with a larger label. Verified column positions, stacking, and absence of horizontal overflow at 390, 768, and 1440px.
 
 The first Discussion heading now states its conclusion directly: “Human demonstrations broaden object coverage.”
+
+## Discussion take-home messages
+
+`index.html:876` now states that human demonstrations improve generalization to unseen objects and that touch improves trained-task performance without ensuring generalization. The limitations heading is simply “Limitations,” as requested.

@@ -13,7 +13,7 @@ Open `http://localhost:8000`. For GitHub Pages, publish the `main` branch from `
 ## Content
 
 - Abstract, paper teaser, sensor design, interactive vector architecture, discussion, and limitations.
-- Eleven selected real evaluation clips across the eight paper conditions and robot-only failure comparisons for all three tasks.
+- Six human/robot training demonstrations and sixteen evaluation clips, with paired comparisons across all eight paper conditions. Outcomes are taken from recorded labels.
 - Recorded 202-taxel activation synchronized with each saved video observation at 30 fps. The displayed signals are processed activation, not calibrated force. A common 0–0.20 color scale is used; higher values saturate. No per-episode rescaling is applied.
 - Interactive SVG plots, downloadable standalone SVG figures, and a CSV transcribed from paper Figures 6–7. All counts are full successes out of 40; partial outcomes count as failures.
 
@@ -26,3 +26,5 @@ No author section, affiliations, contact links, BibTeX block, analytics, externa
 Before publishing new media, run a local metadata audit and visually review every asset. Remove audio, source metadata, and identifying content. Separately verify Git author, committer, commit messages, and the authenticated pushing account. Use only the designated anonymous identity and SSH key; do not add personal co-author trailers or import source repository history. Keep audit tools and private provenance outside the published tree.
 
 Browser validation covers desktop/mobile overflow, results controls, every ID/OOD selector, tactile seeking, comparison playback, image loading, and absence of external requests.
+
+Interactive tactile displays use the first-30-frame baseline, spike suppression, exponential normalization, and exactly one clipped linear rescaling from [0.1, 2.0] to [0, 1]. Sources with different baseline conventions are rebuilt from raw readings. Verified post-clip sources are used unchanged. The browser maps these values to the fixed color scale without rescaling the data again.

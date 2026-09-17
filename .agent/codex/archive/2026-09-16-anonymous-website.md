@@ -67,3 +67,13 @@ The first Discussion heading now states its conclusion directly: “Human demons
 ## Manuscript v6
 
 Replaced `assets/paper.pdf` with the supplied anonymous v6 manuscript, clearing document metadata, embedded-image metadata, document identifiers, and external link actions. Verified eight pages, anonymous author line, and no attachments. Removed the architecture figure download link from `index.html` as requested.
+
+## Full demonstrations and eight-condition comparisons
+
+`index.html` adds paired human and robot training demonstrations for all three tasks, separate from policy rollouts. `tactile.js` offers all eight ID/OOD comparison conditions with recorded outcome labels; success/success pairs are retained where selected. All players keep fixed 2x controls. Human demonstrations use the human taxel geometry.
+
+## Tactile processing audit and correction
+
+All 16 evaluation displays now derive from raw ADC using the canonical first-30-frame mean baseline, spike suppression, exponential normalization, and exactly one clipped [0.1,2.0] to [0,1] rescale. Five training displays also derive from raw readings; the human cup source already has the verified requested processing and is used unchanged. Original plug sources used alternate baseline conventions, and the older human box source used ten baseline frames; those values were not re-normalized in place. Raw readings were recovered and processed instead. This supersedes earlier notes describing all saved processed policy channels as the display source. The plots show standardized post-processing of recordings, not necessarily the exact online policy input.
+
+`assets/tactile-data.js` contains only post-clip arrays and geometry. `tactile.js` performs color lookup and sizing only, with no second signal rescale. Checked all 22 arrays for 202 channels, finite [0,1] values, and zero first 30 frames. Evaluation exports match the canonical pipeline to rounding precision. Browser checks cover six demonstrations, all eight comparisons, seeking, 2x rate, and responsive layouts. New images and videos contain no source metadata or audio; raw provenance remains outside this repository.

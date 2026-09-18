@@ -83,3 +83,7 @@ All 16 evaluation displays now derive from raw ADC using the canonical first-30-
 `styles.css` raises desktop body text to 20px (18px mobile), with larger headings, captions, controls, and tactile labels. `app.js` enlarges plot labels. The human cup demonstration now shows sustained thumb contact; RGB and tactile arrays were replaced together from one verified post-clip source, without additional rescaling. Browser checks passed all players and conditions at three viewport widths.
 
 Plug baseline review remains pending: the selected human recording begins with contact, so a first-30-frame baseline erased the signal. Its documented baseline is the final ten released frames, and the robot source uses its recorded sensor baseline. Restoring those conventions requires resolving the earlier explicit first-30-frame requirement with the user; these plug assets are unchanged in this commit.
+
+## Remove section subtitles
+
+`index.html` removes the sensor, action, training-demonstration, comparison, and characterization subtitles. The Quantitative Results introduction is preserved verbatim, as requested.

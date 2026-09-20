@@ -1,0 +1,122 @@
+[
+  {
+    "clip": "box-human-demo",
+    "original_resolution": [
+      1280,
+      720
+    ],
+    "published_resolution": [
+      720,
+      720
+    ],
+    "previous_resolution": [
+      256,
+      256
+    ],
+    "frames": 107,
+    "fps": 30,
+    "crop": "Same square field of view as processed training images, at native pixel resolution",
+    "frame_pairing": "exact_camera_timestamps",
+    "tactile_values_changed": false
+  },
+  {
+    "clip": "box-robot-demo",
+    "original_resolution": [
+      1280,
+      720
+    ],
+    "published_resolution": [
+      720,
+      720
+    ],
+    "previous_resolution": [
+      256,
+      256
+    ],
+    "frames": 226,
+    "fps": 30,
+    "crop": "Same square field of view as processed training images, at native pixel resolution",
+    "frame_pairing": "original_saved_frame_index",
+    "tactile_values_changed": false
+  },
+  {
+    "clip": "cup-human-demo",
+    "original_resolution": [
+      1280,
+      720
+    ],
+    "published_resolution": [
+      720,
+      720
+    ],
+    "previous_resolution": [
+      256,
+      256
+    ],
+    "frames": 202,
+    "fps": 30,
+    "crop": "Same square field of view as processed training images, at native pixel resolution",
+    "frame_pairing": "exact_camera_timestamps",
+    "tactile_values_changed": false
+  },
+  {
+    "clip": "cup-robot-demo",
+    "original_resolution": [
+      1280,
+      720
+    ],
+    "published_resolution": [
+      720,
+      720
+    ],
+    "previous_resolution": [
+      256,
+      256
+    ],
+    "frames": 484,
+    "fps": 30,
+    "crop": "Same square field of view as processed training images, at native pixel resolution",
+    "frame_pairing": "original_saved_frame_index",
+    "tactile_values_changed": false
+  },
+  {
+    "clip": "plug-human-demo",
+    "original_resolution": [
+      1280,
+      720
+    ],
+    "published_resolution": [
+      720,
+      720
+    ],
+    "previous_resolution": [
+      256,
+      256
+    ],
+    "frames": 90,
+    "fps": 30,
+    "crop": "Same square field of view as processed training images, at native pixel resolution",
+    "frame_pairing": "exact_camera_timestamps",
+    "tactile_values_changed": false
+  },
+  {
+    "clip": "plug-robot-demo",
+    "original_resolution": [
+      1280,
+      720
+    ],
+    "published_resolution": [
+      720,
+      720
+    ],
+    "previous_resolution": [
+      256,
+      256
+    ],
+    "frames": 471,
+    "fps": 30,
+    "crop": "Same square field of view as processed training images, at native pixel resolution",
+    "frame_pairing": "original_saved_frame_index",
+    "tactile_values_changed": false
+  }
+]

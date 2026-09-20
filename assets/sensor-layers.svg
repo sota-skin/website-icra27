@@ -313,25 +313,17 @@
       <path d="M145.00,331.75 L163.40,340.68 L181.80,349.43 L200.20,357.95 L218.60,366.17 L237.00,374.05 L255.40,381.53 L273.80,388.58 L292.20,395.15 L310.60,401.23 L329.00,406.78 L347.40,411.80 L365.80,416.28 L384.20,420.23 L402.60,423.67 L421.00,426.60 L439.40,429.07 L457.80,431.12 L476.20,432.77 L494.60,434.09 L513.00,435.12 L531.40,435.93 L549.80,436.59 L568.20,437.14 L586.60,437.67 L605.00,438.25 L623.40,438.92 L641.80,439.77 L660.20,440.85 L678.60,442.23 L697.00,443.95 L715.40,446.07 L733.80,448.62 L752.20,451.65 L770.60,455.17 L789.00,459.22 L807.40,463.80 L825.80,468.92 L844.20,474.57 L862.60,480.73 L881.00,487.40 L899.40,494.53 L917.80,502.08 L936.20,510.03 L954.60,518.31 L973.00,526.88 L991.40,535.67 L1009.80,544.61 L1028.20,553.66 L1046.60,562.73 L1065.00,571.75" fill="none" stroke="#ffffff" stroke-width="1.1" stroke-linejoin="round" opacity=".35" />
     </g>
   </g>
-  <path d="M652.80 762.16 H705" fill="none" stroke="#656c62" stroke-width="1.5" />
-  <circle cx="652.80" cy="762.16" r="3" fill="#656c62" />
-  <text x="722" y="770.16" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#242823">Polyimide support</text>
-  <path d="M652.80 662.16 H705" fill="none" stroke="#656c62" stroke-width="1.5" />
-  <circle cx="652.80" cy="662.16" r="3" fill="#656c62" />
-  <text x="722" y="670.16" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#242823">TPU adhesive</text>
-  <path d="M616.02 564.60 H705" fill="none" stroke="#656c62" stroke-width="1.5" />
-  <circle cx="616.02" cy="564.60" r="3" fill="#656c62" />
-  <text x="722" y="572.60" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#242823">Fabric electrode</text>
-  <path d="M652.80 462.16 H705" fill="none" stroke="#656c62" stroke-width="1.5" />
-  <circle cx="652.80" cy="462.16" r="3" fill="#656c62" />
-  <text x="722" y="470.16" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#242823">SEBS dielectric</text>
-  <path d="M587.52 342.26 H705" fill="none" stroke="#656c62" stroke-width="1.5" />
+  <path d="M652.8 162.16 H740 V762.16 H652.8" fill="none" stroke="#656c62" stroke-width="1.5" />
+  <circle cx="652.8" cy="162.16" r="3" fill="#656c62" />
+  <circle cx="652.8" cy="762.16" r="3" fill="#656c62" />
+  <text x="762" y="204" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#242823">Polyimide support</text>
+  <path d="M652.8 262.16 H720 V662.16 H652.8" fill="none" stroke="#656c62" stroke-width="1.5" />
+  <circle cx="652.8" cy="262.16" r="3" fill="#656c62" />
+  <circle cx="652.8" cy="662.16" r="3" fill="#656c62" />
+  <text x="762" y="304" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#242823">TPU adhesive</text>
+  <path d="M587.52 342.26 H700 V564.6 H616.02" fill="none" stroke="#656c62" stroke-width="1.5" />
   <circle cx="587.52" cy="342.26" r="3" fill="#656c62" />
-  <text x="722" y="350.26" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#242823">Fabric electrode</text>
-  <path d="M652.80 262.16 H705" fill="none" stroke="#656c62" stroke-width="1.5" />
-  <circle cx="652.80" cy="262.16" r="3" fill="#656c62" />
-  <text x="722" y="270.16" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#242823">TPU adhesive</text>
-  <path d="M652.80 162.16 H705" fill="none" stroke="#656c62" stroke-width="1.5" />
-  <circle cx="652.80" cy="162.16" r="3" fill="#656c62" />
-  <text x="722" y="170.16" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#242823">Polyimide support</text>
+  <circle cx="616.02" cy="564.6" r="3" fill="#656c62" />
+  <text x="762" y="404" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#242823">Fabric electrode</text>
+  <text x="280" y="449" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#242823">SEBS dielectric</text>
 </svg>

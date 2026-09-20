@@ -1,11 +1,12 @@
 {
   "selection": "Latest qualifying labeled episode per condition and method; partial counts as failure. Incomplete OOD pairs retain both previous recordings.",
-  "timing": "60fps constant-rate capture; tactile values held from the latest saved observation at or before each video camera timestamp.",
+  "timing": "Per-clip frame rates and alignment are recorded below; plug OOD pairs use experiment-time observation playback at 30 fps.",
   "limitation": "Async resampling can update the causal processor with observations absent from trajectory.npz, so a complete offline replay is not possible for first-30 baseline runs. Plug readout-baseline processing matches exactly. Independent tactile sample timestamps were not saved; this aligns the recorded observation streams, not a measurement of physical sensor latency. Vision-only runs did not record tactile.",
   "retained_pairs": [
     "box-ood",
     "cup-square",
-    "plug-light"
+    "plug-light",
+    "plug-heavy"
   ],
   "clips": [
     {
@@ -73,30 +74,6 @@
       "observations": 324
     },
     {
-      "clip": "plug-ood2",
-      "outcome": "success",
-      "fps": 60,
-      "frames": 593,
-      "repeated_camera_frames": 13,
-      "has_tactile": true,
-      "causal_pipeline_exact_match": true,
-      "processing_verified_by": "recorded --tactile-clip flag and attach_tactile save path",
-      "additional_rescalings": 0,
-      "observations": 295
-    },
-    {
-      "clip": "plug-baseline",
-      "outcome": "fail",
-      "fps": 60,
-      "frames": 485,
-      "repeated_camera_frames": 110,
-      "has_tactile": true,
-      "causal_pipeline_exact_match": true,
-      "processing_verified_by": "recorded --tactile-clip flag and attach_tactile save path",
-      "additional_rescalings": 0,
-      "observations": 241
-    },
-    {
       "clip": "cup-vision-slide",
       "outcome": "fail",
       "fps": 60,
@@ -152,5 +129,30 @@
       "additional_rescalings": 0,
       "observations": 461
     }
-  ]
+  ],
+  "plug_object_correction": {
+    "paper_OOD_1": {
+      "experiment_object": "obj4",
+      "object": "silver-and-black adapter",
+      "weight_difference_g": 109,
+      "clips": [
+        "plug-light-baseline",
+        "plug-ood1"
+      ]
+    },
+    "paper_OOD_2": {
+      "experiment_object": "obj5",
+      "object": "wide black charger",
+      "weight_g": 77.5,
+      "clips": [
+        "plug-baseline",
+        "plug-ood2"
+      ],
+      "height_description": "25% shorter"
+    },
+    "source": "experiment-time evaluation recordings",
+    "fps": 30,
+    "additional_tactile_rescalings": 0,
+    "quantitative_counts": "Original order preserved: OOD-1=obj4, OOD-2=obj5. No count changes."
+  }
 }

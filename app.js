@@ -18,7 +18,6 @@ function renderCharts(){
 }
 document.querySelectorAll('[data-mode]').forEach(b=>b.addEventListener('click',()=>{mode=b.dataset.mode;document.querySelectorAll('[data-mode]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b))});renderCharts()}));
 document.querySelector('#chart-unit').addEventListener('change',renderCharts);
-document.querySelector('#data-rows').innerHTML=tasks.flatMap(t=>t.indices.map((idx,c)=>`<tr><th scope="row">${t.name} · ${t.conditions[c]}<br><small>${t.notes[c]}</small></th>${Object.keys(methods).map(k=>`<td>${methods[k].values[idx]} / 40</td>`).join('')}</tr>`)).join('');
 renderCharts();
 document.querySelector('#compare-play').addEventListener('click',async()=>{const videos=[...document.querySelectorAll('.comparison-video')];videos.forEach(v=>{v.pause();v.currentTime=0});await Promise.all(videos.map(v=>new Promise(resolve=>{if(v.readyState>=3)return resolve();v.addEventListener('canplay',resolve,{once:true});v.load()})));await Promise.allSettled(videos.map(v=>v.play()))});
 // Playback is opt-in; respect reduced motion and avoid loading off-screen footage.

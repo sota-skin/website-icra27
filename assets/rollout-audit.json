@@ -1,0 +1,156 @@
+{
+  "selection": "Latest qualifying labeled episode per condition and method; partial counts as failure. Incomplete OOD pairs retain both previous recordings.",
+  "timing": "60fps constant-rate capture; tactile values held from the latest saved observation at or before each video camera timestamp.",
+  "limitation": "Async resampling can update the causal processor with observations absent from trajectory.npz, so a complete offline replay is not possible for first-30 baseline runs. Plug readout-baseline processing matches exactly. Independent tactile sample timestamps were not saved; this aligns the recorded observation streams, not a measurement of physical sensor latency. Vision-only runs did not record tactile.",
+  "retained_pairs": [
+    "box-ood",
+    "cup-square",
+    "plug-light"
+  ],
+  "clips": [
+    {
+      "clip": "box-vision-slide",
+      "outcome": "fail",
+      "fps": 60,
+      "frames": 516,
+      "repeated_camera_frames": 11,
+      "has_tactile": false
+    },
+    {
+      "clip": "box",
+      "outcome": "success",
+      "fps": 60,
+      "frames": 680,
+      "repeated_camera_frames": 14,
+      "has_tactile": true,
+      "causal_pipeline_exact_match": false,
+      "processing_verified_by": "recorded --tactile-clip flag and attach_tactile save path",
+      "additional_rescalings": 0,
+      "observations": 338
+    },
+    {
+      "clip": "box-id-baseline",
+      "outcome": "success",
+      "fps": 60,
+      "frames": 581,
+      "repeated_camera_frames": 10,
+      "has_tactile": true,
+      "causal_pipeline_exact_match": false,
+      "processing_verified_by": "recorded --tactile-clip flag and attach_tactile save path",
+      "additional_rescalings": 0,
+      "observations": 287
+    },
+    {
+      "clip": "plug-vision-slide",
+      "outcome": "fail",
+      "fps": 60,
+      "frames": 648,
+      "repeated_camera_frames": 18,
+      "has_tactile": false
+    },
+    {
+      "clip": "plug",
+      "outcome": "success",
+      "fps": 60,
+      "frames": 537,
+      "repeated_camera_frames": 7,
+      "has_tactile": true,
+      "causal_pipeline_exact_match": true,
+      "processing_verified_by": "recorded --tactile-clip flag and attach_tactile save path",
+      "additional_rescalings": 0,
+      "observations": 267
+    },
+    {
+      "clip": "plug-id-baseline",
+      "outcome": "success",
+      "fps": 60,
+      "frames": 651,
+      "repeated_camera_frames": 5,
+      "has_tactile": true,
+      "causal_pipeline_exact_match": true,
+      "processing_verified_by": "recorded --tactile-clip flag and attach_tactile save path",
+      "additional_rescalings": 0,
+      "observations": 324
+    },
+    {
+      "clip": "plug-ood2",
+      "outcome": "success",
+      "fps": 60,
+      "frames": 593,
+      "repeated_camera_frames": 13,
+      "has_tactile": true,
+      "causal_pipeline_exact_match": true,
+      "processing_verified_by": "recorded --tactile-clip flag and attach_tactile save path",
+      "additional_rescalings": 0,
+      "observations": 295
+    },
+    {
+      "clip": "plug-baseline",
+      "outcome": "fail",
+      "fps": 60,
+      "frames": 485,
+      "repeated_camera_frames": 110,
+      "has_tactile": true,
+      "causal_pipeline_exact_match": true,
+      "processing_verified_by": "recorded --tactile-clip flag and attach_tactile save path",
+      "additional_rescalings": 0,
+      "observations": 241
+    },
+    {
+      "clip": "cup-vision-slide",
+      "outcome": "fail",
+      "fps": 60,
+      "frames": 590,
+      "repeated_camera_frames": 23,
+      "has_tactile": false
+    },
+    {
+      "clip": "cup",
+      "outcome": "success",
+      "fps": 60,
+      "frames": 772,
+      "repeated_camera_frames": 4,
+      "has_tactile": true,
+      "causal_pipeline_exact_match": false,
+      "processing_verified_by": "recorded --tactile-clip flag and attach_tactile save path",
+      "additional_rescalings": 0,
+      "observations": 380
+    },
+    {
+      "clip": "cup-id-baseline",
+      "outcome": "success",
+      "fps": 60,
+      "frames": 938,
+      "repeated_camera_frames": 17,
+      "has_tactile": true,
+      "causal_pipeline_exact_match": false,
+      "processing_verified_by": "recorded --tactile-clip flag and attach_tactile save path",
+      "additional_rescalings": 0,
+      "observations": 467
+    },
+    {
+      "clip": "cup-cotrain",
+      "outcome": "success",
+      "fps": 60,
+      "frames": 701,
+      "repeated_camera_frames": 8,
+      "has_tactile": true,
+      "causal_pipeline_exact_match": false,
+      "processing_verified_by": "recorded --tactile-clip flag and attach_tactile save path",
+      "additional_rescalings": 0,
+      "observations": 340
+    },
+    {
+      "clip": "cup-baseline",
+      "outcome": "partial",
+      "fps": 60,
+      "frames": 930,
+      "repeated_camera_frames": 23,
+      "has_tactile": true,
+      "causal_pipeline_exact_match": false,
+      "processing_verified_by": "recorded --tactile-clip flag and attach_tactile save path",
+      "additional_rescalings": 0,
+      "observations": 461
+    }
+  ]
+}

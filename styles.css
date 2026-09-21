@@ -47,3 +47,7 @@ body{font-size:20px;line-height:1.5}p{line-height:1.6;color:#4d554b}h2,.section-
 .training-layout{align-items:start}
 
 .results-correction{margin-top:36px;padding:22px 26px;border:1px solid var(--line);border-left:4px solid var(--ink);background:transparent}.results-correction>strong{display:block;font-size:21px;line-height:1.35;margin-bottom:8px}.results-correction p{font-size:18px;line-height:1.6;margin:0}.results-correction a{text-decoration:underline;text-underline-offset:3px}
+
+.abstract-correction { margin-top: 24px; padding: 12px 16px; }
+.abstract-correction strong { font-size: 17px; }
+.abstract-correction p { font-size: 16px; line-height: 1.55; }

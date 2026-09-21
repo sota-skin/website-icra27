@@ -12,10 +12,10 @@ function renderCharts(){
   const bars=t.indices.map((idx,c)=>keys.map((k,j)=>{const m=methods[k],v=m.values[idx],x=25+c*groupWidth+groupWidth/2+(j-keys.length/2)*bw,y=205-v*4.3;return `<g><title>${t.name}, ${t.conditions[c]}: ${m.label}, ${v} of 40 successes</title><rect x="${x}" y="${y}" width="${bw-3}" height="${Math.max(v*4.3,1)}" fill="${m.color}"/><text x="${x+(bw-3)/2}" y="${y-7}" text-anchor="middle" font-size="${keys.length===4?11:14}">${percent?(v*2.5)+'%':v}</text></g>`}).join('')).join('');
   const grid=[0,10,20,30,40].map(v=>`<line x1="25" x2="325" y1="${205-v*4.3}" y2="${205-v*4.3}" stroke="#cbd2c2" stroke-width=".7"/><text x="19" y="${209-v*4.3}" text-anchor="end" font-size="11" fill="#65705d">${percent?v*2.5:v}</text>`).join('');
   const labels=t.conditions.map((c,i)=>{
-   const x=25+groupWidth*(i+.5),image=t.images[i],clip=`object-clip-${t.indices[i]}`;
+   const x=25+groupWidth*(i+.5),image=t.images[i];
    const tick=`<text x="${x}" y="228" text-anchor="middle" font-size="12">${c}</text>`;
-   if(!image){const lines=i===1?['Square base']:['Stack 21 mm','higher'];return tick+lines.map((line,j)=>`<text x="${x}" y="${272+j*16}" text-anchor="middle" font-size="11" fill="#65705d">${line}</text>`).join('');}
-   return tick+`<defs><clipPath id="${clip}"><rect x="${x-36}" y="240" width="72" height="72" rx="10"/></clipPath></defs><image href="assets/object-${image}.webp" xlink:href="assets/object-${image}.webp" x="${x-36}" y="240" width="72" height="72" preserveAspectRatio="xMidYMid meet" clip-path="url(#${clip})"><title>${t.name}: ${c}, ${t.notes[i]}</title></image><text x="${x}" y="333" text-anchor="middle" font-size="11" fill="#65705d">${t.notes[i]}</text>`;
+   if(!image){const lines=i===1?['Square base']:['Stack 21 mm','higher'];return tick+lines.map((line,j)=>`<text x="${x}" y="${272+j*16}" text-anchor="middle" font-size="13" font-weight="700" fill="#65705d">${line}</text>`).join('');}
+   return tick+`<rect x="${x-30}" y="246" width="60" height="60" rx="9" fill="#fff"/><image href="assets/object-${image}.webp" xlink:href="assets/object-${image}.webp" x="${x-23}" y="253" width="46" height="46" preserveAspectRatio="xMidYMid meet"><title>${t.name}: ${c}, ${t.notes[i]}</title></image><text x="${x}" y="333" text-anchor="middle" font-size="13" font-weight="700" fill="#65705d">${t.notes[i]}</text>`;
   }).join('');
   return `<article class="task-chart"><h3>${t.name}</h3><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 335 350" role="img" aria-label="${t.name} ${percent?'success rates':'successes out of 40'}">${grid}${bars}${labels}</svg></article>`;
  }).join('');
